@@ -1,0 +1,282 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: url('images/фон.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+    padding-top: 80px; 
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Навигация */
+header {
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.dark-mode header {
+    background: rgba(30, 30, 30, 0.9);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.dark-mode nav a {
+    color: #f0f0f0;
+}
+
+nav a:hover {
+    color: #8d7e38;
+}
+
+#themeToggle {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.dark-mode #themeToggle {
+    color: #f0f0f0;
+}
+
+/* Основной контент */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dark-mode main {
+    background: rgba(30, 30, 30, 0.85);
+}
+
+/* Герой-секция */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 5px solid #ead575;
+}
+
+.tagline {
+    font-size: 1.6rem;
+    color: #37005c;
+    margin-bottom: 1rem;
+}
+
+.dark-mode .tagline {
+    color: #ccc;
+}
+
+.intro {
+    max-width: 700px;
+    margin: 0 auto 1.4rem;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    background: #f5e07b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #8d7e38;
+}
+
+/* Проекты */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project {
+    background: rgba(240, 240, 240, 0.9);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.dark-mode .project {
+    background: rgba(50, 50, 50, 0.9);
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.tech-icons {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #0077cc;
+}
+
+/* Навыки */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(240, 240, 240, 0.9);
+    border-radius: 10px;
+}
+
+.dark-mode .skill {
+    background: rgba(50, 50, 50, 0.9);
+}
+
+.skill i {
+    font-size: 3rem;
+    color: #8d7e38;
+    margin-bottom: 1rem;
+}
+
+/* Контакты */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea,
+.dark-mode .contact-form select {
+    background: #333;
+    color: #f0f0f0;
+    border-color: #555;
+}
+
+.contact-info {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.work-together {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 3rem;
+}
+
+.dark-mode footer {
+    background: rgba(30, 30, 30, 0.9);
+}
+
+footer nav {
+    margin: 1rem 0;
+}
+
+footer nav a {
+    margin: 0 0.5rem;
+    color: #333;
+}
+
+.dark-mode footer nav a {
+    color: #f0f0f0;
+}
+
+.social {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.social a {
+    margin: 0 0.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.dark-mode .social a {
+    color: #f0f0f0;
+}
+
+.social a:hover {
+    color: #8d7e38;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #8d7e38;
+}
