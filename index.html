@@ -3,184 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Проекты</title>
+    <title>Главная страница</title>
     <link rel="stylesheet" href="dark.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
+        
         <aside class="sidebar-menu">
             <nav class="page-links">
                 <a href="index.html" class="nav-link">Главная</a>
-                <a href="projects.html" class="nav-link active">Проекты</a>
+                <a href="projects.html" class="nav-link">Проекты</a>
                 <a href="journey.html" class="nav-link">Путь обучения</a>
                 <a href="skills.html" class="nav-link">Навыки</a>
                 <a href="about.html" class="nav-link">Обо мне</a>
                 <a href="contact.html" class="nav-link">Контакты</a>
-                <button id="themeToggle" class="theme-btn">Светлая тема</button>
             </nav>
         </aside>
 
         <main class="main-content">
-            <h1 class="page-title">Мои проекты</h1>
-            
-            <div class="projects-grid">
-                <!-- Проект 1 -->
-                <div class="project-card">
-                    <h2>Портфолио "Цифровой Филолог"</h2>
-                    <p class="project-tagline">Веб-сайт как произведение искусства</p>
-                    
-                    <div class="project-screenshot" id="project1-img"></div>
-                    
-                    <div class="tech-stack">
-                        <i class="fab fa-html5" title="HTML5"></i>
-                        <i class="fab fa-css3-alt" title="CSS3"></i>
-                        <i class="fab fa-js" title="JavaScript"></i>
-                    </div>
-                    
-                    <div class="project-desc">
-                        <h3>Проблема → Решение</h3>
-                        <p><strong>Проблема:</strong> Как презентовать творческий подход к веб-разработке без использования сложных фреймворков?</p>
-                        <p><strong>Решение:</strong> Создание эстетичного портфолио с нуля, где каждая страница отражает гармонию между кодом и дизайном.</p>
-                    </div>
-                    
-                    <div class="key-takeaways">
-                        <h4>Ключевые выводы</h4>
-                        <ul>
-                            <li>Чистый код может быть красивым</li>
-                            <li>Адаптивный дизайн требует тщательного планирования</li>
-                            <li>Темы оформления улучшают пользовательский опыт</li>
-                        </ul>
-                    </div>
-                    
-                    <a href="https://github.com" target="_blank" class="code-link">
-                        <i class="fab fa-github"></i> Посмотреть код на GitHub
-                    </a>
-                </div>
 
-                <!-- Проект 2 -->
-                <div class="project-card">
-                    <h2>Интерактивная галерея искусств</h2>
-                    <p class="project-tagline">Виртуальный музей с элементами интерактива</p>
-                    
-                    <div class="project-screenshot" id="project2-img"></div>
-                    
-                    <div class="tech-stack">
-                        <i class="fab fa-html5" title="HTML5"></i>
-                        <i class="fab fa-css3-alt" title="CSS3"></i>
-                        <i class="fab fa-js" title="JavaScript"></i>
-                    </div>
-                    
-                    <div class="project-desc">
-                        <h3>Проблема → Решение</h3>
-                        <p><strong>Проблема:</strong> Онлайн-галереи часто статичны и не передают атмосферу реального музея.</p>
-                        <p><strong>Решение:</strong> Интерактивный сайт с плавными анимациями, виртуальным туром и информацией о каждом экспонате.</p>
-                    </div>
-                    
-                    <div class="key-takeaways">
-                        <h4>Ключевые выводы</h4>
-                        <ul>
-                            <li>JavaScript анимации создают погружение</li>
-                            <li>Оптимизация изображений критична для производительности</li>
-                            <li>Пользователи ценят интерактивные элементы</li>
-                        </ul>
-                    </div>
-                    
-                    <a href="https://github.com" target="_blank" class="code-link">
-                        <i class="fab fa-github"></i> Посмотреть код на GitHub
-                    </a>
-                </div>
+            <div class="image-banner"></div>
 
-                <!-- Проект 3 -->
-                <div class="project-card">
-                    <h2>Литературный блог "Слова и Код"</h2>
-                    <p class="project-tagline">Платформа для публикации статей о литературе и программировании</p>
-                    
-                    <div class="project-screenshot" id="project3-img"></div>
-                    
-                    <div class="tech-stack">
-                        <i class="fab fa-html5" title="HTML5"></i>
-                        <i class="fab fa-css3-alt" title="CSS3"></i>
-                        <i class="fab fa-js" title="JavaScript"></i>
-                    </div>
-                    
-                    <div class="project-desc">
-                        <h3>Проблема → Решение</h3>
-                        <p><strong>Проблема:</strong> Отсутствие платформы, где обсуждаются пересечения гуманитарных наук и технологий.</p>
-                        <p><strong>Решение:</strong> Минималистичный блог с системой категорий, поиском и комментариями.</p>
-                    </div>
-                    
-                    <div class="key-takeaways">
-                        <h4>Ключевые выводы</h4>
-                        <ul>
-                            <li>Простота навигации важна для контент-сайтов</li>
-                            <li>Локальное хранилище браузера полезно для пользовательских настроек</li>
-                            <li>Читаемость — главный приоритет для текстовых платформ</li>
-                        </ul>
-                    </div>
-                    
-                    <a href="https://github.com" target="_blank" class="code-link">
-                        <i class="fab fa-github"></i> Посмотреть код на GitHub
-                    </a>
-                </div>
-
-                <!-- Проект 4 -->
-                <div class="project-card">
-                    <h2>Планировщик творческих проектов</h2>
-                    <p class="project-tagline">Инструмент для организации творческого процесса</p>
-                    
-                    <div class="project-screenshot" id="project4-img"></div>
-                    
-                    <div class="tech-stack">
-                        <i class="fab fa-html5" title="HTML5"></i>
-                        <i class="fab fa-css3-alt" title="CSS3"></i>
-                        <i class="fab fa-js" title="JavaScript"></i>
-                    </div>
-                    
-                    <div class="project-desc">
-                        <h3>Проблема → Решение</h3>
-                        <p><strong>Проблема:</strong> Творческим людям сложно организовывать идеи и проекты.</p>
-                        <p><strong>Решение:</strong> Визуальный планировщик с досками для идей, сроками и прогрессом.</p>
-                    </div>
-                    
-                    <div class="key-takeaways">
-                        <h4>Ключевые выводы</h4>
-                        <ul>
-                            <li>Drag-and-drop функционал требует аккуратной реализации</li>
-                            <li>Интуитивный интерфейс снижает порог входа</li>
-                            <li>Экспорт данных — востребованная функция</li>
-                        </ul>
-                    </div>
-                    
-                    <a href="https://github.com" target="_blank" class="code-link">
-                        <i class="fab fa-github"></i> Посмотреть код на GitHub
-                    </a>
+            <div class="profile-section">
+                <div class="image-photo"></div>
+                <div class="text-content">
+                    <h1>Нестерова Рената</h1>
+                    <p><i>❝Музыка, архитектура, скульптура, живопись. Любое искусство стоит того, чтобы оценить его красоту❞ - Знаменитый архитектор из Сумеру</i></p>
+                    <p>Здравствуй, друг! Веб-разработка для меня – это не просто код, а возможность воплотить в жизнь визуальную гармонию и эстетику. Я начала свой путь с освоения HTML и CSS, вдыхая жизнь в цифровые полотна, а JavaScript открыл передо мной новые глубины программирования. Я убеждена, что за каждой строчкой кода может скрываться красота, и стремлюсь создавать не просто функциональные сайты, а настоящие произведения искусства в мире Цифроввых Филологов.</p>
                 </div>
             </div>
-        </main>
+            <div class="profile-section"></div>
+        </main>    
     </div>
-
-    <footer class="site-footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Нестерова Рената. Все права защищены законами РУДН и Гильдией Искателей Приключений.</p>
-            <div class="footer-links">
-                <a href="index.html">Главная</a> | 
-                <a href="projects.html">Проекты</a> | 
-                <a href="journey.html">Путь обучения</a> | 
-                <a href="skills.html">Навыки</a> | 
-                <a href="about.html">Обо мне</a> | 
-                <a href="contact.html">Контакты</a>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-vk"></i></a>
-                <a href="#"><i class="fab fa-telegram"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-            <button id="backToTop" class="back-top-btn">Наверх ↑</button>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
